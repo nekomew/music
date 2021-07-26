@@ -1,0 +1,7 @@
+server:
+  port: 8090
+
+spring:
+  datasource:
+    url: jdbc:sqlite:db/music.db
+    driver-class-name: org.sqlite.JDBC
