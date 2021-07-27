@@ -19,29 +19,25 @@ body {
 }
 
 .bottom-tab .music-button .music-button-start {
-    width: 0;
-    height: 0;
-    border-color: transparent transparent #3333336b transparent;
-    border-style: solid;
-    border-width: 0 12px 20px 12px;
+    width: 40px;
+    height: 40px;
+    left: 0px;
+    top: 0px;
+    background-image: url(../images/music-button-start.png);
     position: relative;
-    left: 11px;
-    top: 11px;
-    transform: rotate(90deg);
-    -ms-transform:rotate(90deg); 	/* IE 9 */
-    -moz-transform:rotate(90deg); 	/* Firefox */
-    -webkit-transform:rotate(90deg); /* Safari 和 Chrome */
-    -o-transform:rotate(90deg); 	/* Opera */
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
 
 .bottom-tab .music-button .music-button-stop {
-    width: 21px;
-    height: 21px;
-    background-color: #3333336b;
-    border: 0;
+    width: 40px;
+    height: 40px;
+    left: 0px;
+    top: 0px;
+    background-image: url(../images/music-button-stop.png);
     position: relative;
-    left: 10px;
-    top: 10px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
 
 .bottom-tab .music-progress {
