@@ -21,11 +21,17 @@
 </head>
 <body>
 <div id="app">
-    <mt-header title="播放列表">
+    <mt-header title="播放列表" :fixed="true">
         <mt-button icon="more" slot="right"></mt-button>
     </mt-header>
 
-    <mt-tabbar v-model="selected" class="bottom-tab">
+    <mt-tabbar v-model="selected" class="bottom-tab" :fixed="true">
+        <div class="music-button">
+
+        </div>
+        <div class="music-progress">
+            <mt-progress :value="pos" :bar-height="1"></mt-progress>
+        </div>
         <mt-tab-item id="1" class="bottom-tab-item">
             播放列表
         </mt-tab-item>
@@ -33,6 +39,15 @@
             搜索
         </mt-tab-item>
     </mt-tabbar>
+
+    <mt-tab-container v-model="selected" :swipeable="true">
+        <mt-tab-container-item id="1">
+            <mt-cell v-for="n in 20" title="tab-container 1"></mt-cell>
+        </mt-tab-container-item>
+        <mt-tab-container-item id="2">
+            <mt-cell v-for="n in 5" title="tab-container 2"></mt-cell>
+        </mt-tab-container-item>
+    </mt-tab-container>
 </div>
 </body>
 <!-- 先引入 Vue -->

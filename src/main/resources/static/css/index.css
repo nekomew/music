@@ -5,3 +5,29 @@ body {
 .bottom-tab .bottom-tab-item .mint-tab-item-label {
     padding: 6px 0;
 }
+
+.bottom-tab .music-button {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #33333336;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    top: -5px;
+    left: 50%;
+    margin-left: -20px;
+}
+
+.bottom-tab .music-progress {
+    position: absolute;
+    width: 100%;
+}
+
+.bottom-tab .music-progress .mt-progress {
+    height: 1px;
+    line-height: 1px;
+}
+
+.bottom-tab .music-progress .mt-progress-content {
+    height: 1px;
+}
