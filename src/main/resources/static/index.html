@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=7" />
+    <meta name="author" content="wuyanshi"/>
+    <!-- 页面在客户端不缓存;must-revalidate 是针对某些浏览器通过返回按钮回到上一个标签而不重新加载 -->
+    <meta http-equiv="Cache-Control" content="must-revalidate,no-cache"/>
+    <!-- 页面刷新 -->
+    <meta http-equiv="refresh" content="321;"/>
+    <!-- 在iPhone的浏览器中页面将以原始大小显示，并不允许用户手动缩放 -->
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; minimum-scale=1.0; maximum-scale=1.0; user-scalable=no;"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <!-- 默认手机最佳宽度 -->
+    <meta name="MobileOptimized" content="321"/>
+
+    <!-- 引入样式 -->
+    <link rel="stylesheet" href="css/mint-ui.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+<div id="app">
+    <mt-header title="播放列表">
+        <mt-button icon="more" slot="right"></mt-button>
+    </mt-header>
+
+    <mt-tabbar v-model="selected" class="bottom-tab">
+        <mt-tab-item id="1" class="bottom-tab-item">
+            播放列表
+        </mt-tab-item>
+        <mt-tab-item id="2" class="bottom-tab-item">
+            搜索
+        </mt-tab-item>
+    </mt-tabbar>
+</div>
+</body>
+<!-- 先引入 Vue -->
+<script src="js/vue.js"></script>
+<!-- 引入组件库 -->
+<script src="js/mint-ui.js"></script>
+<script src="js/index.js"></script>
+</html>
