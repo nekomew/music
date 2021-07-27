@@ -26,8 +26,8 @@
     </mt-header>
 
     <mt-tabbar v-model="selected" class="bottom-tab" :fixed="true">
-        <div class="music-button">
-
+        <div class="music-button" @click="playButton">
+            <div :class="musicStatusCss"></div>
         </div>
         <div class="music-progress">
             <mt-progress :value="pos" :bar-height="1"></mt-progress>
