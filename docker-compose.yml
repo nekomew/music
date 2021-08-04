@@ -1,0 +1,15 @@
+version: "3"
+services:
+  mpg123:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: zhangq/mpg123web
+    container_name: mpg123
+    ports:
+      - 8090:8090
+    volumes:
+      - /mnt/disk/music:/music
+#    devices:
+#      - /dev/snd
+    restart: always
